@@ -67,6 +67,9 @@ namespace ThePornDB.Configuration
             this.DisableMediaAutoIdentify = false;
             this.DisableActorsAutoIdentify = false;
 
+            this.TagActors = true;
+            this.ActorsTag = "XXX";
+
             this.ActorsRole = ActorsRoleStyle.Gender;
             this.ActorsImage = ActorsImageStyle.Poster;
             this.ActorsOverview = ActorsOverviewStyle.Default;
@@ -106,5 +109,9 @@ namespace ThePornDB.Configuration
         public ActorsOverviewStyle ActorsOverview { get; set; }
 
         public string ActorsOverviewFormat { get; set; }
+
+        public bool TagActors { get; set; }
+
+        public string ActorsTag { get; set; }
     }
 }
